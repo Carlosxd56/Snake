@@ -7,4 +7,4 @@ Size = (Screen_width, Screen_height)
 title = "serpiente negra"
 
 # Colors
-BG_Color = (0, 0, 0)
+BG_Color = (0, 200, 0)
