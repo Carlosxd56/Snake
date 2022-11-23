@@ -11,20 +11,25 @@ class Snake():
         self.y = 100
 
     def draw(self):
+        self.parent_window.fill(constants.BG_Color)
         self.parent_window.blit(self.snake_body, (self.x, self.y))
         pygame.display.flip()
 
     def move_left(self):
         self.x -= 10
+        self.draw()
 
     def move_right(self):
         self.x += 10
+        self.draw()
 
     def move_up(self):
-        self.y += 10
+        self.y -= 10
+        self.draw()
     
     def move_down(self):
-        self.y -= 10
+        self.y += 10
+        self.draw()
 
 
 class GAME():
@@ -51,6 +56,7 @@ class GAME():
 
                     if event.key == K_LEFT:
                         self.snake.move_left()
+                        
                     
                     if event.key == K_RIGHT:
                         self.snake.move_right()
