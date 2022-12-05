@@ -8,3 +8,6 @@ title = "serpiente negra"
 
 # Colors
 BG_Color = (0, 200, 0)
+
+# size snake body
+Size_snake = 64
